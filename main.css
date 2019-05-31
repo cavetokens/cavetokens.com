@@ -837,5 +837,7 @@ span {
   text-align: center;
   border-left: 0.2em solid brown;
   border-right: 0.2em solid brown;
+  border-bottom: 0.2em solid brown;
   box-sizing: border-box;
+  padding: 5em;
 }
