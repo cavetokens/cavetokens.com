@@ -731,6 +731,50 @@ span {
   height: 45px;
   box-shadow: rgb(251, 218, 194) -7px 7px 0;
   opacity: 1;
+  -webkit-animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  -moz-animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  -o-animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@-webkit-keyframes move-moon {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@-moz-keyframes move-moon {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@-o-keyframes move-moon {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@keyframes move-moon {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(9px);
+  }
 }
 
 .mountain {
