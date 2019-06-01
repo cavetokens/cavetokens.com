@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
   margin:0;
 }
 
 body {
   background-color: #f7c285;
+  font-family: 'Lato', sans-serif;
 }
 
 #header {
@@ -728,81 +731,66 @@ span {
   height: 45px;
   box-shadow: rgb(251, 218, 194) -7px 7px 0;
   opacity: 1;
-  -webkit-animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    infinite;
-  -moz-animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    infinite;
-  -o-animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-  animation: move-moon 1.55s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-}
-
-@-webkit-keyframes move-moon {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(9px);
-  }
-}
-@-moz-keyframes move-moon {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(9px);
-  }
-}
-@-o-keyframes move-moon {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(9px);
-  }
-}
-@keyframes move-moon {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(9px);
-  }
 }
 
 .mountain {
   position: relative;
 }
 
+.title {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  z-index: 10000000000000000000000; /*No coming back now...*/
+}
 
 .mountain1 {
   position: absolute;
   bottom: -1px;
   left: 40%;
-  background-color: grey;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: dimgrey;
+  -webkit-clip-path: polygon(0% 100%, 20% 24%, 30% 41%, 40% 10%, 50% 18%, 60% 0%, 90% 100%);
+  clip-path: polygon(0% 100%, 20% 24%, 30% 41%, 40% 10%, 50% 18%, 60% 0%, 90% 100%);
   width: 25vw;
   height: 15vw;
   z-index: 3;
 }
 
 .insert-mountain1 {
+  position: absolute;
+  top: 0;
   background-color: darkgrey;
   width: 25vw;
   height: 15vw;
-  clip-path: polygon(50% 0%, 65% 100%, 100% 100%);
-  -webkit-clip-path: polygon(50% 0%, 65% 100%, 100% 100%);
+  clip-path: polygon(20% 24%, 25% 57%, 30% 41%);
+  -webkit-clip-path: polygon(20% 24%, 25% 57%, 30% 41%);
+}
+
+.insert-mountain1-2 {
+  position: absolute;
+  top: 0;
+  background-color: darkgrey;
+  width: 25vw;
+  height: 15vw;
+  clip-path: polygon(40% 10%, 45% 50%, 50% 18%);
+  -webkit-clip-path: polygon(40% 10%, 45% 50%, 50% 18%);
+}
+
+.insert-mountain1-3 {
+  position: absolute;
+  top: 0;
+  background-color: darkgrey;
+  width: 25vw;
+  height: 15vw;
+  clip-path: polygon(60% 0%, 70% 100%, 90% 100%);
+  -webkit-clip-path: polygon(60% 0%, 70% 100%, 90% 100%);
 }
 
 .mountain2 {
   position: absolute;
   bottom: -1px;
   left: 33%;
-  background-color: dimgrey;
+  background-color: grey;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   width: 15vw;
