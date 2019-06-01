@@ -9,6 +9,19 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+p {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: dimgrey;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 #header {
   height: 40vh
 
@@ -788,6 +801,13 @@ span {
   z-index: 10000000000000000000000; /*No coming back now...*/
 }
 
+.logo {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+  z-index: 10000000000000000000001;
+}
+
 .mountain1 {
   position: absolute;
   bottom: -1px;
@@ -798,6 +818,16 @@ span {
   width: 25vw;
   height: 15vw;
   z-index: 3;
+}
+
+.cave-insert {
+  position: absolute;
+  top: 0;
+  background-color: darkgrey;
+  width: 25vw;
+  height: 15vw;
+  clip-path: polygon(26% 71%, 33% 73%, 40% 75%, 50% 90%, 51% 95%, 37% 94%, 37% 85%, 35% 83%, 34% 77%);
+  -webkit-clip-path: polygon(26% 71%, 33% 73%, 40% 75%, 50% 90%, 51% 95%, 37% 94%, 37% 85%, 35% 83%, 34% 77%);
 }
 
 .insert-mountain1 {
