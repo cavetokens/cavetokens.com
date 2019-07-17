@@ -1,0 +1,38 @@
+{
+  "name": "cavetokens.com",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "version": "gh-pages-deploy && git add -A .",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cavetokens/cavetokens.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cavetokens/cavetokens.github.io/issues"
+  },
+  "homepage": "https://github.com/cavetokens/cavetokens.github.io#readme",
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "cname": "cavetokens.com",
+    "prep": [
+      "build"
+    ],
+    "post": [],
+    "noprompt": false
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "gh-pages-deploy": "^0.5.1",
+    "husky": "^3.0.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.5"
+  }
+}
