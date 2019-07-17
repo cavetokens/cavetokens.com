@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "version": "gh-pages-deploy"
+    "version": "git add -A .",
+    "postversion": "git push && git push --tags && gh-pages-deploy"
   },
   "repository": {
     "type": "git",
