@@ -8,8 +8,9 @@
     "build:cname": "cp -Rfv CNAME dist/",
     "build:parcel": "parcel build src/index.html",
     "build": "npm run build:parcel && npm run build:cname",
+    "preversion": "npm run build",
     "version": "git add -A .",
-    "postversion": "git push && git push --tags && gh-pages -d build"
+    "postversion": "git push && git push --tags && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
